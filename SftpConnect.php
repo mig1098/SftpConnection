@@ -57,7 +57,6 @@ class SftpConnect{
         return $msg;
     }
     public function getContents(){
-        //return $this->ftp_server.' '.$this->sftp_port.' '.$this->sftp_timeout.' '.$this->sftp_user_name.' '. $this->sftp_user_pass;
         $conn_id = new SFTP($this->sftp_server,$this->sftp_port,$this->sftp_timeout);
         if (!$conn_id->login($this->sftp_user_name, $this->sftp_user_pass)) {
             exit('Login Failed');
