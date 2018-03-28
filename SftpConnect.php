@@ -1,3 +1,4 @@
+<?php
 define('BASE_APPPATH','dir_path');
 require_once BASE_APPPATH.'phpseclib/phpsec.php';
 use phpseclib\Net\SFTP;
